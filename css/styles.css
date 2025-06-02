@@ -43,17 +43,21 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   border: 1px solid #ddd;
   margin-bottom: 3rem;
+  overflow: hidden; 
 }
 
 .carousel-item{
-  height: 200vh;
-  max-height: 500px;
-  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%; 
+  position: relative;
 }
 .carousel-item img {
-  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 500%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel-caption {
